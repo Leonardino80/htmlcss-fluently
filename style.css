@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: arial; font-size: small;
+  font-family: arial;
 }
 
 nav .container img{
@@ -24,8 +24,7 @@ ul{
 }
 
  li{
-  width: auto;
-  height: auto;
+
   display: inline;
   margin: 0 10px;
   color: white;
@@ -50,10 +49,24 @@ position: relative;
 
 .colonna1 {
   width: 40%;
-  display: inline;
   height: 100%;
+  position: relative;
 }
 
+.colonna3 {
+  width: 33.333%;
+  height: 100%;
+  position: relative;
+  padding: 50px;
+}
+
+h2, p, hr, .colonna3 > img{
+  margin: 20px 0;
+}
+
+img + h2{
+  color: lightgreen;
+}
 .sinistra {
   float: left;
 }
@@ -62,15 +75,98 @@ position: relative;
   float: right;
 }
 
+.centrato{
+  text-align: center;
+}
+
 .tasto-verde{
   padding: 5px 15px;
   background-color: green;
   border-radius: 5px;
   border:2px solid green;
+  display: inline;
+  text-decoration: none;
+  color: white;
+  font-size: 8px;
 }
 
 .tasto-grigio{
   padding: 5px 15px;
   border:2px solid grey;
   border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 8px;
+}
+
+.destra ul li:first-child, {
+  color: grey;
+  text-decoration: none;
+}
+
+header{
+  background-color:#294675;
+  height: 400px;
+}
+
+ .wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color:white;
+  width: 40%;
+  height: auto;
+}
+
+.wrapper2 {
+ width: 30%;
+ height: 70px;
+}
+
+ .immagine{
+  display: inline;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  margin:40px;
+}
+
+.immagine1, .immagine2, .immagine3, .immagine4{
+  width: 200px;
+  height: 300px;
+  border-radius: 100px 100px 25px 25px;
+  margin:auto;
+}
+
+.immagine1{
+  background-image: url(immagini/gorilla.jpg);
+  background-size: cover;
+
+}
+.immagine2{
+  background-image: url(immagini/ragnar.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.immagine3{
+  background-image: url(immagini/poldark.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.immagine4{
+  background-image: url(immagini/poldark3.jpg);
+  background-size: cover;
+  background-position: right;
+  width: 400px;
+  height: 400px;
+}
+
+.layout_3_colonne{
+  padding-top: 40px;
+}
+
+.container + hr{
+  margin.bottom: 30px;
 }
